@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -6,6 +12,7 @@
   --footer-bg-color: #2f303a;
   --footer-prim-text-color: rgba(255, 255, 255, 0.6);
   --button-color: #f5f4fa;
+  --secondary-bg-color: #f5f4fa;
 }
 /* Общие стили для двух страниц */
 
@@ -15,8 +22,20 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
 button {
   font-family: inherit;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
 }
 
 /*WebStudio*/
@@ -52,6 +71,8 @@ button {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-link:hover,
@@ -81,7 +102,10 @@ button {
 
 /* Футер */
 footer {
-  background-color: var(--footer-bg-color); /*тимчасовий backround-color*/
+  background-color: var(--footer-bg-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .adr {
@@ -92,6 +116,8 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+
+  margin-top: 20px;
 }
 
 .footer-link {
@@ -102,6 +128,8 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin-top: 9px;
 }
 
 /* Стили для index.html */
@@ -109,13 +137,24 @@ footer {
 /* Герой */
 .hero {
   color: var(--title-accent-color);
-  background-color: var(--title-text-color); /*тимчасовий backround-color*/
+  /*background-color: var(--title-text-color); /*тимчасовий backround-color*/
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.hero-section {
+  background-color: #2f303a;
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* Кнопка "Заказать услугу" */
@@ -127,9 +166,20 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  border: none;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  cursor: pointer;
 }
 
 /* Блок Особенности */
+.section {
+  padding-top: 94px;
+}
+
 .subtitle {
   color: var(--title-text-color);
 
@@ -138,6 +188,9 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .features-text {
@@ -145,6 +198,9 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 /* Блок Чем мы занимаемся */
@@ -155,9 +211,19 @@ footer {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* Блок Наша команда */
+.team-section {
+  background-color: var(--secondary-bg-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 .sub-title {
   color: var(--title-text-color);
 
@@ -165,6 +231,10 @@ footer {
   font-size: 16px;
   line-height: 1.26;
   letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .specialty {
@@ -172,6 +242,23 @@ footer {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.card-team {
+  width: 270px;
+  /*height: 368px;*/
+
+  background-color: var(--title-accent-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  padding-bottom: 30px;
 }
 
 /* Стили для portfolio.html*/
@@ -185,6 +272,13 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  display: inline-block;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
 }
 
 .btn-nav:hover,
@@ -201,6 +295,11 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  margin-left: 24px;
 }
 
 .project-text {
@@ -208,4 +307,29 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+
+  margin-top: 4px;
+  margin-bottom: 0;
+
+  margin-left: 24px;
+}
+
+.portfolio-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.card-portfolio {
+  width: 370px;
+  border: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.margin-buttom {
+  margin-bottom: 56px;
 }
