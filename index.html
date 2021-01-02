@@ -13,27 +13,29 @@
 
 <body>
     <!-- Шапка сайта -->
-    <header class="container">
-        <nav>
-            <a href="./index.html" class="logo">
-                Web<span class="logo-text-primary">Studio</span>
-            </a>
-
-            <ul class="list">
-                <li><a href="./index.html" class="menu-link current">Студия</a></li>
-                <li><a href="./pages/portfolio.html" class="menu-link">Портфолио</a></li>
-                <li><a href="" class="menu-link">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <ul class="list">
-            <li>
-                <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
-            </li>
-        </ul>
+    <header>
+            <div class="container main-menu">
+                <nav class="nav">
+                    <a href="./index.html" class="logo">
+                        Web<span class="logo-text-primary">Studio</span>
+                    </a>
+                
+                    <ul class="list site-nav">
+                        <li><a href="./index.html" class="menu-link current">Студия</a></li>
+                        <li><a href="./pages/portfolio.html" class="menu-link">Портфолио</a></li>
+                        <li><a href="" class="menu-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <ul class="list contact-nav">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
     </header>
 
     <main>
@@ -53,9 +55,9 @@
         <!-- Особенности -->
         <section class="section">
             <div class="container">
-                <h2 class="title">Особенности</h2>
+                <h2 class="title visually-hidden">Особенности</h2>
                 
-                <ul class="list">
+                <ul class="list features">
                     <li>
                         <h3 class="subtitle">Внимание к деталям</h3>
                         <p class="features-text">
@@ -85,11 +87,11 @@
         </section>
 
         <!-- Чем мы занимаемся -->
-        <section class="section">
+        <section class="section work-section">
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 
-                <ul class="list">
+                <ul class="list img-work">
                     <li>
                         <a href="">
                             <img src="./images/img-1.jpg" alt="Человек програмирует за компьютером" width="370" height="294" />
@@ -115,7 +117,7 @@
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 
-                <ul class="list">
+                <ul class="list card">
                     <div class="card-team">
                         <li>
                             <img src="./images/photo-1.jpg" alt="Темноволосый мужчина-европеец в очках с бородой" width="270" height="260" />
